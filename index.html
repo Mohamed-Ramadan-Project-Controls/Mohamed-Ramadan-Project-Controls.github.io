@@ -1,0 +1,421 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Mohamed Ramadan, PMP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a planner's portfolio read like a programme — title block, career as a Gantt, work as activity records with live charts */
+:root{
+  --paper:#f3f6f5; --sheet:#ffffff; --ink:#15212a; --ink-2:#4b5963; --rule:#d7dfdf; --muted:#9aa7ad;
+  --bar:#2f6f8f; --bar-soft:#dbe9f0; --crit:#c8372d; --crit-soft:#f7dedb; --good:#0d7d52;
+  --c1:#2a78d6; --c2:#eb6834; --c3:#1baf7a; --c4:#eda100; --c5:#e87ba4;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0f161b; --sheet:#172128; --ink:#e8eef0; --ink-2:#a3b3ba; --rule:#2a3740; --muted:#6c7c84;
+  --bar:#5ea7c9; --bar-soft:#1d3846; --crit:#ef6a5e; --crit-soft:#4a2421; --good:#3fbf86;
+  --c1:#3987e5; --c2:#d95926; --c3:#199e70; --c4:#c98500; --c5:#d55181; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f161b; --sheet:#172128; --ink:#e8eef0; --ink-2:#a3b3ba; --rule:#2a3740; --muted:#6c7c84;
+  --bar:#5ea7c9; --bar-soft:#1d3846; --crit:#ef6a5e; --crit-soft:#4a2421; --good:#3fbf86;
+  --c1:#3987e5; --c2:#d95926; --c3:#199e70; --c4:#c98500; --c5:#d55181; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px;padding-block:0 64px;display:grid;gap:72px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.05}
+h2{font-size:clamp(30px,4vw,42px);font-weight:700}
+h3{font-size:26px;font-weight:600}
+p{margin:0;max-width:66ch}
+a{color:var(--bar)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--crit);outline-offset:3px}
+.mono{font-family:var(--mono);font-size:13px;letter-spacing:.02em}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+section{display:grid;gap:24px;scroll-margin-top:72px}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:8px}
+
+/* sticky nav */
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--rule)}
+nav.top .in{max-width:1120px;margin:0 auto;padding-inline:20px;padding-block:10px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+nav.top .brand{font-family:var(--display);font-weight:700;font-size:20px;color:var(--ink);text-decoration:none}
+nav.top .links{display:flex;gap:16px;flex-wrap:wrap}
+nav.top .links a{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-decoration:none}
+nav.top .links a:hover{color:var(--crit)}
+
+/* hero */
+.hero{display:grid;gap:24px;padding-top:36px}
+.titleblock{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border:1px solid var(--rule);background:var(--sheet);padding:10px 14px}
+.hero h1{font-size:clamp(50px,9vw,104px);font-weight:700;letter-spacing:-.005em}
+.hero h1 span{color:var(--crit)}
+.role{font-family:var(--display);font-size:clamp(22px,3vw,32px);font-weight:500;color:var(--ink-2)}
+.lede{font-size:20px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;padding:10px 16px;border-radius:3px;border:1px solid var(--ink);color:var(--ink);background:transparent}
+.btn.primary{background:var(--crit);border-color:var(--crit);color:#fff}
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.fig{background:var(--sheet);padding:16px;display:grid;gap:4px;align-content:start}
+.fig b{font-family:var(--display);font-size:42px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.fig span{font-size:14px;color:var(--ink-2)}
+.scale{background:var(--sheet);border:1px solid var(--rule);padding:16px;display:grid;gap:10px}
+.stack{display:flex;height:22px;gap:2px}
+.seg{background:var(--bar);border-radius:2px}
+.slabs{display:flex;gap:2px}
+.slab{display:grid;line-height:1.2;min-width:0;font-size:13px}
+.slab b{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.slab span{color:var(--ink-2);font-family:var(--mono);font-size:11px;white-space:nowrap}
+
+/* gantt */
+.gantt-scroll{overflow-x:auto;border:1px solid var(--rule);background:var(--sheet)}
+.gantt{min-width:720px;padding:14px 16px 10px;display:grid;gap:10px}
+.g-scale,.g-row{display:grid;grid-template-columns:240px 1fr;gap:12px;align-items:center}
+.g-years{position:relative;height:18px}
+.g-years span{position:absolute;transform:translateX(-50%);font-family:var(--mono);font-size:11px;color:var(--ink-2)}
+.g-track{position:relative;height:22px;background-image:linear-gradient(to right,var(--rule) 1px,transparent 1px);background-size:calc(100%/17) 100%}
+.g-bar{position:absolute;top:4px;height:14px;background:var(--bar);border-radius:2px}
+.g-bar.crit{background:var(--crit)}
+.g-ms{position:absolute;top:5px;width:11px;height:11px;background:var(--ink);transform:translateX(-5.5px) rotate(45deg)}
+.g-name{display:grid;line-height:1.25}
+.g-name small{font-family:var(--mono);font-size:11px;color:var(--ink-2)}
+.g-name b{font-weight:600;font-size:15px}
+.g-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--ink-2);padding-top:6px;border-top:1px solid var(--rule)}
+.g-legend i{display:inline-block;width:18px;height:9px;margin-right:6px;vertical-align:middle;border-radius:2px}
+
+/* cases */
+.cases{display:grid;gap:28px}
+.case{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:28px;background:var(--sheet);border:1px solid var(--rule);padding:24px}
+.case .txt{display:grid;gap:12px;align-content:start;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--mono);font-size:12px;border:1px solid var(--rule);padding:3px 8px;border-radius:3px;background:var(--paper)}
+.case dl{margin:0;display:grid;grid-template-columns:max-content 1fr;gap:6px 14px}
+.case dt{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);padding-top:3px}
+.case dd{margin:0}
+.tag{font-family:var(--mono);font-size:12px;color:var(--crit);letter-spacing:.06em}
+.viz{display:grid;gap:8px;min-width:0;align-content:start}
+.viz h4{margin:0;font-family:var(--display);font-size:20px;font-weight:600}
+.viz .sub{font-size:13px;color:var(--ink-2)}
+.viz svg{width:100%;height:auto;display:block}
+.viz .legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--ink-2)}
+.viz .legend i{display:inline-block;width:14px;height:4px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.viz .note{font-size:12px;color:var(--ink-2);font-style:italic}
+svg .gl{stroke:var(--rule);stroke-width:1}
+svg .axl{stroke:var(--muted);stroke-width:1}
+svg .ref{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3}
+svg .tk{fill:var(--ink-2);font:11px var(--mono)}
+svg .ax{fill:var(--ink-2);font:12px var(--body)}
+svg .lb{fill:var(--ink);font:13px var(--body)}
+svg .lb.strong{font-weight:700;fill:var(--crit)}
+.mini{width:100%;border-collapse:collapse;font-size:14px}
+.mini th,.mini td{padding:6px 8px;border-bottom:1px solid var(--rule);text-align:left}
+.mini th{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);font-weight:500}
+.mini td.n{text-align:right;font-variant-numeric:tabular-nums}
+.st{display:inline-flex;align-items:center;gap:6px}
+.st::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--good)}
+.st.rev::before{background:var(--c4)}
+.st.na::before{background:var(--muted)}
+
+/* programmes */
+.table-scroll{overflow-x:auto;border:1px solid var(--rule);background:var(--sheet)}
+table.prog{border-collapse:collapse;width:100%;min-width:820px;font-size:15px}
+.prog th,.prog td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--rule);vertical-align:middle}
+.prog th{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);font-weight:500}
+.prog td.num{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.prog th.num{text-align:right}
+.prog tfoot td{font-weight:700;border-bottom:none}
+.vbar{display:flex;align-items:center;gap:8px;justify-content:flex-end}
+.vbar i{display:block;height:8px;background:var(--bar);border-radius:2px}
+.approved{font-family:var(--mono);font-size:12px;background:var(--bar-soft);color:var(--ink);padding:2px 7px;border-radius:3px;white-space:nowrap}
+.pending{background:var(--crit-soft)}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0;border:1px solid var(--rule);background:var(--sheet)}
+.step{padding:18px;display:grid;gap:6px;border-right:1px solid var(--rule);position:relative}
+.step:last-child{border-right:none}
+.step .n{font-family:var(--mono);font-size:12px;color:var(--crit)}
+.step p{font-size:15px;color:var(--ink-2)}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.svc{border-top:3px solid var(--bar);padding-top:12px;display:grid;gap:6px}
+.svc:first-child{border-top-color:var(--crit)}
+.svc p{font-size:16px;color:var(--ink-2)}
+.creds{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.creds ul{margin:0;padding-left:18px;display:grid;gap:4px}
+
+.contact-block{background:var(--ink);color:var(--paper);padding:32px;display:grid;gap:18px}
+.contact-block h2{color:var(--paper)}
+.contact-block .label{color:var(--muted)}
+.contact-block .row{display:flex;flex-wrap:wrap;gap:14px 34px}
+.contact-block .item{display:grid;gap:4px}
+.contact-block .val{font-family:var(--display);font-size:clamp(22px,3vw,30px);font-weight:600;user-select:all;word-break:break-all}
+.contact-block a{color:var(--paper)}
+button.copy{font:12px var(--mono);border:1px solid var(--muted);background:transparent;color:var(--paper);padding:3px 10px;cursor:pointer;border-radius:3px;justify-self:start}
+footer{border-top:1px solid var(--rule);padding-top:16px;font-size:14px;color:var(--ink-2);display:grid;gap:6px}
+
+@media (max-width:820px){
+  .case{grid-template-columns:1fr;padding:18px}
+  .g-scale,.g-row{grid-template-columns:180px 1fr}
+  .step{border-right:none;border-bottom:1px solid var(--rule)}
+  .slab span{display:none}
+  nav.top .links{gap:12px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .g-bar,.seg{transform-origin:left;animation:grow .8s ease-out both}
+  @keyframes grow{from{transform:scaleX(.2)}to{transform:scaleX(1)}}
+}
+</style>
+
+<nav class="top" aria-label="Sections"><div class="in">
+  <a class="brand" href="#top">M. Ramadan</a>
+  <div class="links"><a href="#work">Work</a><a href="#programmes">Programmes</a><a href="#career">Career</a><a href="#method">Method</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<div class="wrap" id="top">
+
+  <header class="hero">
+    <div class="titleblock mono">
+      <span>PROJECT: CAREER PROGRAMME · MR-2010</span>
+      <span>DATA DATE: OCT 2026</span>
+      <span>STATUS: OPEN TO ROLES</span>
+    </div>
+    <h1>Mohamed Ramadan<span>.</span></h1>
+    <div class="role">Planning &amp; Project Controls · Primavera P6 · PMP</div>
+    <p class="lede">I build programmes that pass consultant review. Seven consultant-approved P6 programmes for Dubai master-developer projects, plus delay analysis, recovery planning and consultant-format reporting, across 16 years on both the contractor and the consultant side.</p>
+    <div class="cta-row"><a class="btn primary" href="#contact">Contact me</a><a class="btn" href="#work">See selected work</a><a class="btn" href="https://www.linkedin.com/in/mohamedramadanprojectcontrols" target="_blank" rel="noopener">LinkedIn</a></div>
+    <div class="figures" aria-label="Track record">
+      <div class="fig"><b>7</b><span>consultant-approved programmes</span></div>
+      <div class="fig"><b>AED 3.2B+</b><span>contract value scheduled</span></div>
+      <div class="fig"><b>1,884</b><span>villas &amp; townhouses</span></div>
+      <div class="fig"><b>130k+</b><span>activities in P6</span></div>
+      <div class="fig"><b>16</b><span>years, UAE &amp; Egypt</span></div>
+    </div>
+    <div class="scale">
+      <span class="label">AED 3,217M of approved programmes, by project</span>
+      <div class="stack" role="img" aria-label="AED 3.2B of approved programmes by project"><div class="seg" style="width:23.94%;opacity:1.00" title="Venera: AED 770M"></div><div class="seg" style="width:22.60%;opacity:0.88" title="Rivera: AED 727M"></div><div class="seg" style="width:17.10%;opacity:0.76" title="Velora: AED 550M"></div><div class="seg" style="width:16.51%;opacity:0.64" title="Vida: AED 531M"></div><div class="seg" style="width:13.80%;opacity:0.52" title="Alana: AED 444M"></div><div class="seg" style="width:6.06%;opacity:0.40" title="Park Horizon: AED 195M"></div></div><div class="slabs"><div class="slab" style="width:23.94%"><b>Venera</b><span>AED 770M</span></div><div class="slab" style="width:22.60%"><b>Rivera</b><span>AED 727M</span></div><div class="slab" style="width:17.10%"><b>Velora</b><span>AED 550M</span></div><div class="slab" style="width:16.51%"><b>Vida</b><span>AED 531M</span></div><div class="slab" style="width:13.80%"><b>Alana</b><span>AED 444M</span></div><div class="slab" style="width:6.06%"><b>Park Horizon</b><span>AED 195M</span></div></div>
+    </div>
+  </header>
+
+  <section id="work" aria-labelledby="work-h">
+    <div class="sec-head"><h2 id="work-h">Selected work</h2><span class="label">Charts are samples · dummy data unless stated</span></div>
+    <div class="cases">
+
+      <article class="case">
+        <div class="txt">
+          <span class="tag">BASELINE · PRECAST VILLAS</span>
+          <h3>322-villa community rebuilt for precast, approved at Rev 03</h3>
+          <div class="chips"><span class="chip">20,000 activities</span><span class="chip">110,000 links</span><span class="chip">AED 444M</span></div>
+          <p>After award the construction method changed from conventional to precast walls and hollow-core slabs. The whole programme had to be rebuilt around mould fabrication, precast erection and plot sequencing, then pass a strict consultant review.</p>
+          <dl>
+            <dt>Method</dt><dd>Line of balance between plots, BOQ cost loading, productivity-based manpower, cash flow, authority handover logic</dd>
+            <dt>Result</dt><dd>Approved after closing ~30 consultant comments over three cycles; zero hard constraints, 95% finish-to-start, lags under 5%</dd>
+          </dl>
+        </div>
+        <div class="viz">
+          <h4>Line of balance: five trades, no clashes</h4>
+          <div class="legend"><span><i style="background:var(--c1)"></i>Substructure</span><span><i style="background:var(--c2)"></i>Precast erection</span><span><i style="background:var(--c3)"></i>MEP 1st fix</span><span><i style="background:var(--c4)"></i>Internal finishes</span><span><i style="background:var(--c5)"></i>Final fix & T&C</span></div>
+          <svg viewBox="0 0 640 380" role="img" aria-label="Sample line of balance: five trades move through 20 villas at 4 days per villa without clashing"><line x1="60.0" y1="30" x2="60.0" y2="330" class="gl"/><text x="60.0" y="350" class="tk" text-anchor="middle">0</text><line x1="140.0" y1="30" x2="140.0" y2="330" class="gl"/><text x="140.0" y="350" class="tk" text-anchor="middle">20</text><line x1="220.0" y1="30" x2="220.0" y2="330" class="gl"/><text x="220.0" y="350" class="tk" text-anchor="middle">40</text><line x1="300.0" y1="30" x2="300.0" y2="330" class="gl"/><text x="300.0" y="350" class="tk" text-anchor="middle">60</text><line x1="380.0" y1="30" x2="380.0" y2="330" class="gl"/><text x="380.0" y="350" class="tk" text-anchor="middle">80</text><line x1="460.0" y1="30" x2="460.0" y2="330" class="gl"/><text x="460.0" y="350" class="tk" text-anchor="middle">100</text><line x1="540.0" y1="30" x2="540.0" y2="330" class="gl"/><text x="540.0" y="350" class="tk" text-anchor="middle">120</text><line x1="620.0" y1="30" x2="620.0" y2="330" class="gl"/><text x="620.0" y="350" class="tk" text-anchor="middle">140</text><line x1="60" y1="330.0" x2="620" y2="330.0" class="gl"/><text x="50" y="334.0" class="tk" text-anchor="end">1</text><line x1="60" y1="268.9" x2="620" y2="268.9" class="gl"/><text x="50" y="272.9" class="tk" text-anchor="end">5</text><line x1="60" y1="192.6" x2="620" y2="192.6" class="gl"/><text x="50" y="196.6" class="tk" text-anchor="end">10</text><line x1="60" y1="116.3" x2="620" y2="116.3" class="gl"/><text x="50" y="120.3" class="tk" text-anchor="end">15</text><line x1="60" y1="40.0" x2="620" y2="40.0" class="gl"/><text x="50" y="44.0" class="tk" text-anchor="end">20</text><g data-trade="Substructure"><title>Substructure: villa 1 starts day 0, villa 20 finishes day 82</title><polygon points="60.0,330.0 364.0,40.0 388.0,40.0 84.0,330.0" fill="var(--c1)" fill-opacity=".18"/><line x1="60.0" y1="330.0" x2="364.0" y2="40.0" stroke="var(--c1)" stroke-width="2.5"/><line x1="84.0" y1="330.0" x2="388.0" y2="40.0" stroke="var(--c1)" stroke-width="2" stroke-opacity=".55"/></g><g data-trade="Precast erection"><title>Precast erection: villa 1 starts day 12, villa 20 finishes day 93</title><polygon points="108.0,330.0 412.0,40.0 432.0,40.0 128.0,330.0" fill="var(--c2)" fill-opacity=".18"/><line x1="108.0" y1="330.0" x2="412.0" y2="40.0" stroke="var(--c2)" stroke-width="2.5"/><line x1="128.0" y1="330.0" x2="432.0" y2="40.0" stroke="var(--c2)" stroke-width="2" stroke-opacity=".55"/></g><g data-trade="MEP 1st fix"><title>MEP 1st fix: villa 1 starts day 24, villa 20 finishes day 106</title><polygon points="156.0,330.0 460.0,40.0 484.0,40.0 180.0,330.0" fill="var(--c3)" fill-opacity=".18"/><line x1="156.0" y1="330.0" x2="460.0" y2="40.0" stroke="var(--c3)" stroke-width="2.5"/><line x1="180.0" y1="330.0" x2="484.0" y2="40.0" stroke="var(--c3)" stroke-width="2" stroke-opacity=".55"/></g><g data-trade="Internal finishes"><title>Internal finishes: villa 1 starts day 36, villa 20 finishes day 120</title><polygon points="204.0,330.0 508.0,40.0 540.0,40.0 236.0,330.0" fill="var(--c4)" fill-opacity=".18"/><line x1="204.0" y1="330.0" x2="508.0" y2="40.0" stroke="var(--c4)" stroke-width="2.5"/><line x1="236.0" y1="330.0" x2="540.0" y2="40.0" stroke="var(--c4)" stroke-width="2" stroke-opacity=".55"/></g><g data-trade="Final fix & T&C"><title>Final fix & T&C: villa 1 starts day 50, villa 20 finishes day 132</title><polygon points="260.0,330.0 564.0,40.0 588.0,40.0 284.0,330.0" fill="var(--c5)" fill-opacity=".18"/><line x1="260.0" y1="330.0" x2="564.0" y2="40.0" stroke="var(--c5)" stroke-width="2.5"/><line x1="284.0" y1="330.0" x2="588.0" y2="40.0" stroke="var(--c5)" stroke-width="2" stroke-opacity=".55"/></g><text x="340" y="374" class="ax" text-anchor="middle">Working days from block start</text><text x="16" y="180" class="ax" transform="rotate(-90 16 180)" text-anchor="middle">Villa</text></svg>
+          <span class="note">Sample, dummy data: 20 villas at 4 days per villa.</span>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="txt">
+          <span class="tag">RECOVERY PROGRAMME</span>
+          <h3>Re-sequencing after a 6-month structure slippage</h3>
+          <div class="chips"><span class="chip">+1,500 activities</span><span class="chip">SS links 4k → 7k</span><span class="chip">0 constraints</span></div>
+          <p>Sixteen months in, structure was six months late and engineering eight months late, with progress at 56% against 67% planned. I rebuilt the remaining works: overlapping trades, MEP and façade split block by block, and authorities, testing and handover re-planned.</p>
+          <dl>
+            <dt>Result</dt><dd>Consultant-approved revised programme targeting the original completion date, with no negative float at approval</dd>
+          </dl>
+        </div>
+        <div class="viz">
+          <h4>Slippage absorbed by the revised programme</h4>
+          <span class="sub">Days late against the baseline at the data date, by key milestone</span>
+          <svg viewBox="0 0 640 300" role="img" aria-label="Milestone slippage absorbed by the revised programme; completion held at the contract date"><line x1="200" y1="24" x2="200" y2="286" class="axl"/><g><title>Engineering complete: +235 days vs baseline</title><text x="190" y="47" class="lb" text-anchor="end">Engineering complete</text><rect x="200" y="34" width="372.1" height="18" rx="3" fill="var(--muted)"/><text x="580.1" y="47" class="lb">+235 d</text></g><g><title>Structure complete: +177 days vs baseline</title><text x="190" y="83" class="lb" text-anchor="end">Structure complete</text><rect x="200" y="70" width="280.2" height="18" rx="3" fill="var(--muted)"/><text x="488.2" y="83" class="lb">+177 d</text></g><g><title>Mock-up approval: +126 days vs baseline</title><text x="190" y="119" class="lb" text-anchor="end">Mock-up approval</text><rect x="200" y="106" width="199.5" height="18" rx="3" fill="var(--muted)"/><text x="407.5" y="119" class="lb">+126 d</text></g><g><title>MEP complete: +70 days vs baseline</title><text x="190" y="155" class="lb" text-anchor="end">MEP complete</text><rect x="200" y="142" width="110.8" height="18" rx="3" fill="var(--muted)"/><text x="318.8" y="155" class="lb">+70 d</text></g><g><title>DEWA power on: +60 days vs baseline</title><text x="190" y="191" class="lb" text-anchor="end">DEWA power on</text><rect x="200" y="178" width="95.0" height="18" rx="3" fill="var(--muted)"/><text x="303.0" y="191" class="lb">+60 d</text></g><g><title>Start of PQA: +60 days vs baseline</title><text x="190" y="227" class="lb" text-anchor="end">Start of PQA</text><rect x="200" y="214" width="95.0" height="18" rx="3" fill="var(--muted)"/><text x="303.0" y="227" class="lb">+60 d</text></g><g><title>Project completion: held at the contract date</title><text x="190" y="263" class="lb" text-anchor="end">Project completion</text><rect x="198" y="248" width="4" height="22" fill="var(--crit)"/><text x="210" y="263" class="lb strong">0 d · held at contract date</text></g></svg>
+          <span class="note">Figures from the approved revised programme.</span>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="txt">
+          <span class="tag">BASELINE · HIGH-RISE</span>
+          <h3>Twin 19-storey towers, 672 apartments</h3>
+          <div class="chips"><span class="chip">6,500+ activities</span><span class="chip">AED 531M</span><span class="chip">11 authorities</span></div>
+          <p>Two towers on a shared basement and two podiums, with a 30-month programme and a tight structure-to-MEP interface.</p>
+          <dl>
+            <dt>Method</dt><dd>Pour-zone sequencing, floor cycles per tower and wing, MEP–civil interface matrix</dd>
+            <dt>Result</dt><dd>Consultant-approved (Rev 02) with zero constraints</dd>
+          </dl>
+        </div>
+        <div class="viz">
+          <h4>Schedule health check before every submission</h4>
+          <span class="sub">DCMA 14-point summary, sample baseline</span>
+          <table class="mini">
+            <thead><tr><th>Check</th><th class="n">Result</th><th class="n">Limit</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Missing logic</td><td class="n">0.1%</td><td class="n">&lt; 5%</td><td><span class="st">Pass</span></td></tr>
+              <tr><td>Leads</td><td class="n">0</td><td class="n">0</td><td><span class="st">Pass</span></td></tr>
+              <tr><td>Lags</td><td class="n">4.9%</td><td class="n">&lt; 5%</td><td><span class="st">Pass</span></td></tr>
+              <tr><td>Finish-to-start</td><td class="n">94.3%</td><td class="n">&gt; 90%</td><td><span class="st">Pass</span></td></tr>
+              <tr><td>Hard constraints</td><td class="n">0</td><td class="n">&lt; 5%</td><td><span class="st">Pass</span></td></tr>
+              <tr><td>High float</td><td class="n">12.0%</td><td class="n">&lt; 5%</td><td><span class="st rev">Review</span></td></tr>
+              <tr><td>High duration</td><td class="n">0.4%</td><td class="n">&lt; 5%</td><td><span class="st">Pass</span></td></tr>
+              <tr><td>Critical path test</td><td class="n">Passed</td><td class="n">Pass</td><td><span class="st">Pass</span></td></tr>
+            </tbody>
+          </table>
+          <span class="note">Sample, dummy data.</span>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="txt">
+          <span class="tag">DELAY ANALYSIS · EOT</span>
+          <h3>Window analysis on townhouse communities</h3>
+          <div class="chips"><span class="chip">85-day EOT claim</span><span class="chip">But-for runs</span><span class="chip">Fragnets</span></div>
+          <p>I perform the delay analysis behind extension-of-time claims: windows on successive updates, fragnets, concurrency and classification of every delay.</p>
+          <dl>
+            <dt>Claim</dt><dd>85-day consolidated EOT claim, 430 townhouses, AED 336M</dd>
+            <dt>Ongoing</dt><dd>Monthly windows with but-for runs on 488 townhouses, isolating 64 days of excusable delay from a single change event</dd>
+          </dl>
+        </div>
+        <div class="viz">
+          <h4>Window summary: 64 days excusable, 0 contractor</h4>
+          <span class="sub">Cumulative delay to completion by monthly window, sample project</span>
+          <table class="mini">
+            <thead><tr><th>Window</th><th>Period</th><th class="n">Cum. delay</th><th class="n">Change</th><th>Driver</th></tr></thead>
+            <tbody>
+              <tr><td>W02</td><td>Dec 25</td><td class="n">8</td><td class="n">+8</td><td>Change event EV1</td></tr>
+              <tr><td>W03</td><td>Jan 26</td><td class="n">32</td><td class="n">+24</td><td>EV1 + tiling</td></tr>
+              <tr><td>W04</td><td>Feb 26</td><td class="n">29</td><td class="n">−3</td><td>Mitigation</td></tr>
+              <tr><td>W05</td><td>Mar 26</td><td class="n">50</td><td class="n">+21</td><td>Procurement</td></tr>
+              <tr><td>W07</td><td>May 26</td><td class="n">35</td><td class="n">−15</td><td>Recovery</td></tr>
+              <tr><td>W09</td><td>Jul 26</td><td class="n">64</td><td class="n">+18</td><td>EV1 cumulative</td></tr>
+            </tbody>
+          </table>
+          <span class="note">Sample, dummy data.</span>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="txt">
+          <span class="tag">REPORTING</span>
+          <h3>Weekly and monthly reports in consultant format</h3>
+          <div class="chips"><span class="chip">98 weekly reports</span><span class="chip">Earned value</span><span class="chip">Cash-flow forecast</span></div>
+          <p>98 consecutive weekly reports on one project, plus monthly reports and management presentations.</p>
+          <dl>
+            <dt>Contents</dt><dd>As-built critical path, float and trend analysis, earned value by BOQ section, S-curves, histograms, 1–3-month cash-flow forecast, look-aheads, risk, variation, delay and EOT registers</dd>
+          </dl>
+        </div>
+        <div class="viz">
+          <h4>Progress S-curve: 3.7 points behind plan</h4>
+          <div class="legend"><span><i style="background:var(--c1)"></i>Actual</span><span><i style="background:var(--muted)"></i>Baseline</span></div>
+          <svg viewBox="0 0 640 380" role="img" aria-label="Sample S-curve: actual 32.9% against plan 35.9% at month 12"><line x1="60" y1="330" x2="620" y2="330" class="gl"/><text x="50" y="334" class="tk" text-anchor="end">0%</text><line x1="60" y1="255" x2="620" y2="255" class="gl"/><text x="50" y="259" class="tk" text-anchor="end">25%</text><line x1="60" y1="180" x2="620" y2="180" class="gl"/><text x="50" y="184" class="tk" text-anchor="end">50%</text><line x1="60" y1="105" x2="620" y2="105" class="gl"/><text x="50" y="109" class="tk" text-anchor="end">75%</text><line x1="60" y1="30" x2="620" y2="30" class="gl"/><text x="50" y="34" class="tk" text-anchor="end">100%</text><text x="60.0" y="350" class="tk" text-anchor="middle">0</text><text x="180.0" y="350" class="tk" text-anchor="middle">6</text><text x="300.0" y="350" class="tk" text-anchor="middle">12</text><text x="420.0" y="350" class="tk" text-anchor="middle">18</text><text x="540.0" y="350" class="tk" text-anchor="middle">24</text><text x="620.0" y="350" class="tk" text-anchor="middle">28</text>
+<line x1="300.0" y1="20" x2="300.0" y2="330" class="ref"/><text x="306.0" y="30" class="tk">Data date</text>
+<path d="M60.0,330.0 L80.0,328.0 L100.0,325.5 L120.0,322.2 L140.0,318.0 L160.0,312.6 L180.0,305.7 L200.0,297.2 L220.0,286.6 L240.0,273.9 L260.0,258.9 L280.0,241.6 L300.0,222.3 L320.0,201.6 L340.0,180.0 L360.0,158.4 L380.0,137.7 L400.0,118.4 L420.0,101.1 L440.0,86.1 L460.0,73.4 L480.0,62.8 L500.0,54.3 L520.0,47.4 L540.0,42.0 L560.0,37.8 L580.0,34.5 L600.0,32.0 L620.0,30.0" fill="none" stroke="var(--muted)" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M60.0,330.0 L80.0,328.1 L100.0,325.6 L120.0,322.4 L140.0,318.3 L160.0,313.2 L180.0,306.7 L200.0,298.7 L220.0,289.0 L240.0,277.3 L260.0,263.7 L280.0,248.2 L300.0,231.2" fill="none" stroke="var(--c1)" stroke-width="3"/>
+<circle cx="300.0" cy="222.3" r="5" fill="var(--muted)"><title>Plan 35.9%</title></circle>
+<circle cx="300.0" cy="231.2" r="6" fill="var(--c1)" stroke="var(--sheet)" stroke-width="2"><title>Actual 32.9%</title></circle>
+<text x="290.0" y="212.3" class="lb" text-anchor="end">Plan 35.9%</text>
+<text x="312.0" y="249.2" class="lb">Actual 32.9%</text>
+<text x="610.0" y="22" class="tk" text-anchor="end">Baseline</text>
+<text x="340" y="374" class="ax" text-anchor="middle">Project month</text></svg>
+          <span class="note">Sample, dummy data.</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="programmes" aria-labelledby="prog-h">
+    <div class="sec-head"><h2 id="prog-h">Programmes delivered at Parkway</h2><span class="label">Main contractor · Dubai</span></div>
+    <div class="table-scroll">
+      <table class="prog">
+        <thead><tr><th>Project</th><th>Client</th><th>Scope</th><th class="num">Contract (AED)</th><th class="num">Activities</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>The Valley – Venera</td><td>Emaar</td><td>696 townhouses, precast</td><td class="num"><div class="vbar"><i style="width:80px"></i>770M</div></td><td class="num">36,088</td><td><span class="approved">Approved R01</span></td></tr>
+          <tr><td>The Valley – Rivera</td><td>Emaar</td><td>378 villas + community centre</td><td class="num"><div class="vbar"><i style="width:75.5px"></i>727M</div></td><td class="num">37,050</td><td><span class="approved">Approved</span></td></tr>
+          <tr><td>The Valley – Velora</td><td>Emaar</td><td>488 townhouses, precast</td><td class="num"><div class="vbar"><i style="width:57.1px"></i>550M</div></td><td class="num">25,801</td><td><span class="approved">Approved R01</span></td></tr>
+          <tr><td>Vida Residences, Dubai Hills</td><td>Emaar</td><td>672 apartments, twin 19-storey towers</td><td class="num"><div class="vbar"><i style="width:55.2px"></i>531M</div></td><td class="num">6,563</td><td><span class="approved">Approved Rev 02</span></td></tr>
+          <tr><td>The Valley – Alana</td><td>Emaar</td><td>322 villas, precast</td><td class="num"><div class="vbar"><i style="width:46.1px"></i>444M</div></td><td class="num">20,165</td><td><span class="approved">Approved Rev 03</span></td></tr>
+          <tr><td>The Valley – Alana (recovery)</td><td>Emaar</td><td>Revised programme</td><td class="num">—</td><td class="num">21,655</td><td><span class="approved">Approved RP R01</span></td></tr>
+          <tr><td>Park Horizon, Dubai Hills</td><td>Emaar</td><td>Twin towers + podium</td><td class="num"><div class="vbar"><i style="width:20.3px"></i>195M</div></td><td class="num">4,872</td><td><span class="approved">Approved R02</span></td></tr>
+          <tr><td>CityWalk Crestlane 3</td><td>Dubai Holding</td><td>193 apartments, post-tension</td><td class="num"><div class="vbar"><i style="width:30.4px;background:var(--muted)"></i>293M</div></td><td class="num">7,488</td><td><span class="approved pending">Under review</span></td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="3">Approved programmes</td><td class="num">3,217M</td><td></td><td></td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <section id="career" aria-labelledby="career-h">
+    <div class="sec-head"><h2 id="career-h">Career programme</h2><span class="label">Scale: 2010 – 2026 · Red = current</span></div>
+    <div class="gantt-scroll">
+      <div class="gantt">
+        <div class="g-scale"><span class="label">Activity</span>
+          <div class="g-years"><span style="left:0%">2010</span><span style="left:11.76%">2012</span><span style="left:23.53%">2014</span><span style="left:35.29%">2016</span><span style="left:47.06%">2018</span><span style="left:58.82%">2020</span><span style="left:70.59%">2022</span><span style="left:82.35%">2024</span><span style="left:94.12%">2026</span></div>
+        </div>
+        <div class="g-row"><div class="g-name"><small>MR-1060 · 06/2023 – now</small><b>Parkway · Senior Planning Engineer</b></div><div class="g-track"><div class="g-bar crit" style="left:78.92%;width:20.1%" title="Parkway International Contracting, Dubai"></div><div class="g-ms" style="left:78.43%" title="MBA, 2023"></div></div></div>
+        <div class="g-row"><div class="g-name"><small>MR-1050 · 08/2020 – 06/2023</small><b>SYSTRA · Lead Planning &amp; Controls</b></div><div class="g-track"><div class="g-bar" style="left:62.25%;width:16.67%" title="Greater Cairo Metro Lines 3 and 4"></div></div></div>
+        <div class="g-row"><div class="g-name"><small>MR-1040 · 01/2018 – 07/2020</small><b>GTS-SISTEM / Alstom · Senior Planner</b></div><div class="g-track"><div class="g-bar" style="left:47.06%;width:14.7%" title="Dubai Metro Route 2020 (Expo 2020)"></div></div></div>
+        <div class="g-row"><div class="g-name"><small>MR-1030 · 02/2015 – 01/2018</small><b>ECG · Planning Engineer</b></div><div class="g-track"><div class="g-bar" style="left:29.9%;width:17.16%" title="Capital and Sphinx International Airports, Al-Andalus Dubai"></div><div class="g-ms" style="left:37.75%" title="PMP, 2016"></div></div></div>
+        <div class="g-row"><div class="g-name"><small>MR-1020 · 02/2013 – 01/2015</small><b>UECC / Palm Hills · Planning Engineer</b></div><div class="g-track"><div class="g-bar" style="left:18.14%;width:11.27%" title="Palm Hills Katameya, 752 villas"></div></div></div>
+        <div class="g-row"><div class="g-name"><small>MR-1010 · 04/2010 – 01/2013</small><b>TEAMCON · Project Engineer</b></div><div class="g-track"><div class="g-bar" style="left:1.47%;width:16.18%" title="Allegria and New Cairo villas"></div></div></div>
+        <div class="g-legend"><span><i style="background:var(--crit)"></i>Current role</span><span><i style="background:var(--bar)"></i>Completed</span><span><i style="background:var(--ink);width:10px;height:10px;transform:rotate(45deg)"></i>Milestones: PMP 2016 · MBA 2023</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="method" aria-labelledby="method-h">
+    <div class="sec-head"><h2 id="method-h">How a baseline gets approved</h2><span class="label">The sequence I follow</span></div>
+    <div class="steps">
+      <div class="step"><span class="n">STEP 1</span><h3>Read the contract</h3><p>Key dates, sections, programme specification, BOQ and the consultant's comment history.</p></div>
+      <div class="step"><span class="n">STEP 2</span><h3>Build the logic</h3><p>WBS, activity codes, calendars and sequence from the construction method, not from a template.</p></div>
+      <div class="step"><span class="n">STEP 3</span><h3>Load it</h3><p>Resources and cost tied to the BOQ, so progress and earned value come straight out of P6.</p></div>
+      <div class="step"><span class="n">STEP 4</span><h3>Check it</h3><p>DCMA 14-point test, critical path review, open ends and constraints cleared.</p></div>
+      <div class="step"><span class="n">STEP 5</span><h3>Explain it</h3><p>A narrative that answers the consultant's questions before they ask, then a clean comment log.</p></div>
+    </div>
+    <div class="services">
+      <div class="svc"><h3>Baseline programmes</h3><p>P6 baselines that survive consultant review, for villa communities and high-rise towers.</p></div>
+      <div class="svc"><h3>Delay analysis &amp; EOT</h3><p>Window analysis, but-for runs, fragnets and delay classification, with chronology and time-bar checks.</p></div>
+      <div class="svc"><h3>Recovery planning</h3><p>Re-sequencing the remaining works after slippage, with realistic overlaps and clean logic.</p></div>
+      <div class="svc"><h3>Controls reporting</h3><p>Weekly and monthly reports with earned value, float trend, cash-flow forecasts and registers.</p></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="cred-h">
+    <div class="sec-head"><h2 id="cred-h">Credentials</h2></div>
+    <div class="creds">
+      <div><span class="label">Certification &amp; education</span><ul><li>PMP, Project Management Institute (2016)</li><li>MBA, Strategic Management, AASTMT (2023)</li><li>BSc Civil Engineering, Benha University (2010)</li></ul></div>
+      <div><span class="label">Earlier projects</span><ul><li>Dubai Metro Route 2020 (Expo 2020)</li><li>Greater Cairo Metro Lines 3 &amp; 4</li><li>Capital and Sphinx International Airports</li><li>Palm Hills Katameya, 752 villas</li></ul></div>
+      <div><span class="label">Tools</span><ul><li>Primavera P6 · MS Project · TILOS</li><li>Power BI · Excel · Aconex</li><li>AutoCAD · Navisworks / BIM</li></ul></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-block" aria-labelledby="contact-h">
+    <h2 id="contact-h">Let's talk about your programme</h2>
+    <div class="row">
+      <div class="item"><span class="label">Email</span><span class="val" id="email">mhmd.civil@yahoo.com</span><button class="copy" type="button" id="copy-email" data-target="email">Copy email</button></div>
+      <div class="item"><span class="label">Phone</span><span class="val" id="phone">+971 50 701 9253</span><button class="copy" type="button" id="copy-phone" data-target="phone">Copy number</button></div>
+      <div class="item"><span class="label">LinkedIn</span><a class="val" href="https://www.linkedin.com/in/mohamedramadanprojectcontrols" target="_blank" rel="noopener">Open profile</a></div>
+    </div>
+    <span class="label">Dubai, UAE · available for planning &amp; project controls roles</span>
+  </section>
+
+  <footer>
+    <span>Project figures describe programmes I prepared; clients' documents are confidential and not published here. Charts marked "sample" use dummy data.</span>
+    <span class="mono">Mohamed Ramadan Mahmoud · Dubai, UAE</span>
+  </footer>
+</div>
+
+<script>
+document.querySelectorAll('button.copy').forEach(function(btn){
+  var label=btn.textContent;
+  btn.addEventListener('click',function(){
+    var el=document.getElementById(btn.dataset.target); var text=el.textContent.trim();
+    var done=function(){btn.textContent='Copied';setTimeout(function(){btn.textContent=label},1500)};
+    var fallback=function(){var r=document.createRange();r.selectNodeContents(el);var s=window.getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selected — press Ctrl+C'};
+    try{navigator.clipboard.writeText(text).then(done,fallback)}catch(e){fallback()}
+  });
+});
+</script>
+
+</body></html>
