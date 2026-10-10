@@ -1,4 +1,16 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.grp{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:8px 0 -4px;padding-bottom:6px;border-bottom:2px solid var(--ink)}.grp h3{font:700 26px var(--display);margin:0;letter-spacing:.3px}.grp span{font:12px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:1px}.tabs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:32px 0 0}
+.tabs button{display:grid;justify-items:center;gap:8px;padding:26px 16px;border:2px solid var(--rule);border-radius:10px;background:var(--sheet);color:var(--ink);cursor:pointer;font:inherit;transition:border-color .15s}
+.tabs button b{font:700 24px var(--display);letter-spacing:.3px}.tabs button small{font:12px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.tabs button:hover{border-color:var(--bar)}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--sheet);border-color:var(--ink)}.tabs button[aria-selected="true"] small{color:var(--muted)}
+.tabs button:focus-visible{outline:2px solid var(--crit);outline-offset:2px}
+.tabpanel{padding-top:18px}.tabpanel .figures{margin-top:0}
+.ptitle{display:none}
+.rails{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.ritem{background:var(--sheet);padding:16px 18px;display:grid;gap:6px}.ritem b{font:700 18px var(--display);letter-spacing:.2px}.ritem span{font-size:14px;color:var(--ink-2,var(--muted))}
+.more{display:inline-block;margin-top:14px;font:13px var(--mono);color:var(--crit);text-decoration:none}
+@media print{.tabs{display:none}.tabpanel[hidden]{display:block!important}.ptitle{display:block;font:700 20px var(--display);margin:14px 0 8px}.more{display:none}}
+</style></head><body>
 <title>Mohamed Ramadan, PMP</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -179,10 +191,16 @@ footer{border-top:1px solid var(--rule);padding-top:16px;font-size:14px;color:va
       <span>STATUS: OPEN TO ROLES</span>
     </div>
     <h1>Mohamed Ramadan<span>.</span></h1>
-    <div class="role">Planning &amp; Project Controls · Primavera P6 · PMP</div>
-    <p class="lede">I build programmes that pass consultant review. Seven consultant-approved P6 programmes for Dubai master-developer projects, plus delay analysis, recovery planning and consultant-format reporting, across 16 years on both the contractor and the consultant side.</p>
+    <div class="role">Planning &amp; Project Controls · Primavera P6 · PMP · MBA</div>
+    <p class="lede">I build programmes that pass consultant review, on both sides of the contract: as the contractor's planner on Dubai master-developer communities and towers, and as the Engineer's planner on Greater Cairo Metro Line 3. Sixteen years across the UAE and Egypt.</p>
     <div class="cta-row"><a class="btn primary" href="#contact">Contact me</a><a class="btn" href="#work">See selected work</a><a class="btn" href="https://www.linkedin.com/in/mohamedramadanprojectcontrols" target="_blank" rel="noopener">LinkedIn</a></div>
-    <div class="figures" aria-label="Track record">
+    <div class="tabs" role="tablist" aria-label="Project types">
+      <button role="tab" id="tab-b" aria-controls="panel-b" aria-selected="true"><svg viewBox="0 0 64 64" width="72" height="72" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M6 58h52"/><rect x="10" y="14" width="16" height="44"/><rect x="30" y="6" width="18" height="52"/><path d="M48 30h8v28h-8"/><path d="M15 22h6M15 30h6M15 38h6M15 46h6M35 14h8M35 22h8M35 30h8M35 38h8M35 46h8"/></svg><b>Buildings</b><small>Contractor side · Dubai</small></button>
+      <button role="tab" id="tab-r" aria-controls="panel-r" aria-selected="false" tabindex="-1"><svg viewBox="0 0 64 64" width="72" height="72" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><rect x="14" y="6" width="36" height="42" rx="8"/><path d="M14 28h36"/><rect x="20" y="12" width="24" height="11" rx="2"/><circle cx="23" cy="38" r="2.6"/><circle cx="41" cy="38" r="2.6"/><path d="M22 48l-8 10M42 48l8 10M17 54h30"/></svg><b>Metro &amp; rail</b><small>Engineer's side · Cairo</small></button>
+    </div>
+    <div class="tabpanel" role="tabpanel" id="panel-b" aria-labelledby="tab-b">
+      <h3 class="ptitle">Buildings</h3>
+      <div class="figures" aria-label="Track record">
       <div class="fig"><b>7</b><span>consultant-approved programmes</span></div>
       <div class="fig"><b>AED 3.2B+</b><span>contract value scheduled</span></div>
       <div class="fig"><b>1,884</b><span>villas &amp; townhouses</span></div>
@@ -193,13 +211,26 @@ footer{border-top:1px solid var(--rule);padding-top:16px;font-size:14px;color:va
       <span class="label">AED 3,217M of approved programmes, by project</span>
       <div class="stack" role="img" aria-label="AED 3.2B of approved programmes by project"><div class="seg" style="width:23.94%;opacity:1.00" title="Venera: AED 770M"></div><div class="seg" style="width:22.60%;opacity:0.88" title="Rivera: AED 727M"></div><div class="seg" style="width:17.10%;opacity:0.76" title="Velora: AED 550M"></div><div class="seg" style="width:16.51%;opacity:0.64" title="Vida: AED 531M"></div><div class="seg" style="width:13.80%;opacity:0.52" title="Alana: AED 444M"></div><div class="seg" style="width:6.06%;opacity:0.40" title="Park Horizon: AED 195M"></div></div><div class="slabs"><div class="slab" style="width:23.94%"><b>Venera</b><span>AED 770M</span></div><div class="slab" style="width:22.60%"><b>Rivera</b><span>AED 727M</span></div><div class="slab" style="width:17.10%"><b>Velora</b><span>AED 550M</span></div><div class="slab" style="width:16.51%"><b>Vida</b><span>AED 531M</span></div><div class="slab" style="width:13.80%"><b>Alana</b><span>AED 444M</span></div><div class="slab" style="width:6.06%"><b>Park Horizon</b><span>AED 195M</span></div></div>
     </div>
+      <a class="more" href="#work-buildings">See building projects →</a>
+    </div>
+    <div class="tabpanel" role="tabpanel" id="panel-r" aria-labelledby="tab-r" hidden>
+      <h3 class="ptitle">Metro &amp; rail</h3>
+      <div class="rails">
+        <div class="ritem"><b>Greater Cairo Metro Line 3</b><span>Phases 3 and 4, on the Engineer's side</span></div>
+        <div class="ritem"><b>Integrated programme</b><span>All main contracts in one comprehensive schedule</span></div>
+        <div class="ritem"><b>Signed road map</b><span>Every contracting group agreed one path, from civil works to inauguration</span></div>
+        <div class="ritem"><b>Interfaces</b><span>Civil, track, power and signalling handovers planned and tracked</span></div>
+        <div class="ritem"><b>In service</b><span>Both phases completed and opened to passengers</span></div>
+      </div>
+      <a class="more" href="#work-rail">See metro projects →</a>
+    </div>
   </header>
 
   <section id="work" aria-labelledby="work-h">
     <div class="sec-head"><h2 id="work-h">Selected work</h2><span class="label">Charts are samples · dummy data unless stated</span></div>
     <div class="cases">
-
-      <article class="case">
+      <div class="grp" id="work-buildings"><h3>Buildings</h3><span>Contractor side · EMAAR and Dubai Holding, Dubai</span></div>
+<article class="case">
         <div class="txt">
           <span class="tag">BASELINE · PRECAST VILLAS</span>
           <h3>322-villa community rebuilt for precast, approved at Rev 03</h3>
@@ -217,7 +248,6 @@ footer{border-top:1px solid var(--rule);padding-top:16px;font-size:14px;color:va
           <span class="note">Sample, dummy data: 20 villas at 4 days per villa.</span>
         </div>
       </article>
-
       <article class="case">
         <div class="txt">
           <span class="tag">RECOVERY PROGRAMME</span>
@@ -235,7 +265,6 @@ footer{border-top:1px solid var(--rule);padding-top:16px;font-size:14px;color:va
           <span class="note">Figures from the approved revised programme.</span>
         </div>
       </article>
-
       <article class="case">
         <div class="txt">
           <span class="tag">BASELINE · HIGH-RISE</span>
@@ -266,7 +295,6 @@ footer{border-top:1px solid var(--rule);padding-top:16px;font-size:14px;color:va
           <span class="note">Sample, dummy data.</span>
         </div>
       </article>
-
       <article class="case">
         <div class="txt">
           <span class="tag">DELAY ANALYSIS · EOT</span>
@@ -295,7 +323,6 @@ footer{border-top:1px solid var(--rule);padding-top:16px;font-size:14px;color:va
           <span class="note">Sample, dummy data.</span>
         </div>
       </article>
-
       <article class="case">
         <div class="txt">
           <span class="tag">REPORTING</span>
@@ -322,7 +349,58 @@ footer{border-top:1px solid var(--rule);padding-top:16px;font-size:14px;color:va
           <span class="note">Sample, dummy data.</span>
         </div>
       </article>
-
+      <div class="grp" id="work-rail"><h3>Metro &amp; rail</h3><span>Engineer's side · Greater Cairo Metro Line 3</span></div>
+<article class="case">
+        <div class="txt">
+          <span class="tag">METRO · ENGINEER'S SIDE · LINE 3 PHASE 3</span>
+          <h3>One signed road map across all contractors</h3>
+          <div class="chips"><span class="chip">Integrated programme</span><span class="chip">Contractor coordination</span><span class="chip">Claims review</span><span class="chip">EN / AR reporting</span></div>
+          <p>On Greater Cairo Metro Line 3 Phase 3, I was responsible for the project's integrated programme on the Engineer's side: bringing the main contractors, each on a separate contract, into one comprehensive schedule.</p>
+          <dl>
+            <dt>Road map</dt><dd>I led the coordination of the main contractors and their joint-venture partners to one signed road map of handover and access dates, from civil works through testing to inauguration</dd>
+            <dt>Monitoring</dt><dd>Monthly actual-versus-planned analysis per station, and a coordinated installation programme for the depot workshop</dd>
+            <dt>Review</dt><dd>Contractor programme submissions reviewed against the contract requirements, with documented comments</dd>
+            <dt>Claims</dt><dd>Contractor claims assessed clause by clause and presented to the client in English and Arabic</dd>
+            <dt>Result</dt><dd>The phase was completed and entered passenger service</dd>
+          </dl>
+        </div>
+        <div class="viz">
+          <h4>The road map every contractor signed</h4>
+          <span class="sub">The agreed critical path, from civil works to inauguration</span>
+          <svg viewBox="0 0 640 145" role="img" aria-label="Signed road map critical path: civil works, track installation, power works, signalling, static and dynamic tests, EWP and integrated tests, ETR and inauguration"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--muted)"/></marker></defs><text x="8" y="18" class="tk">SIGNED BY ALL CONTRACTING GROUPS</text><g><title>Civil works (Civil)</title><rect x="8.0" y="36" width="72" height="58" rx="4" fill="var(--bar)"/><text x="44.0" y="62.5" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">Civil</text><text x="44.0" y="75.5" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">works</text><text x="44.0" y="112" text-anchor="middle" class="tk" style="font-size:9.5px">Civil</text></g><line x1="81.0" y1="65" x2="84.9" y2="65" stroke="var(--muted)" stroke-width="1.5" marker-end="url(#ar)"/><g><title>Track installation (Track)</title><rect x="86.9" y="36" width="72" height="58" rx="4" fill="var(--bar)"/><text x="122.9" y="62.5" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">Track</text><text x="122.9" y="75.5" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">installation</text><text x="122.9" y="112" text-anchor="middle" class="tk" style="font-size:9.5px">Track</text></g><line x1="159.9" y1="65" x2="163.7" y2="65" stroke="var(--muted)" stroke-width="1.5" marker-end="url(#ar)"/><g><title>Power works (Power)</title><rect x="165.7" y="36" width="72" height="58" rx="4" fill="var(--bar)"/><text x="201.7" y="62.5" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">Power</text><text x="201.7" y="75.5" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">works</text><text x="201.7" y="112" text-anchor="middle" class="tk" style="font-size:9.5px">Power</text></g><line x1="238.7" y1="65" x2="242.6" y2="65" stroke="var(--muted)" stroke-width="1.5" marker-end="url(#ar)"/><g><title>Signalling works (Signalling)</title><rect x="244.6" y="36" width="72" height="58" rx="4" fill="var(--bar)"/><text x="280.6" y="62.5" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">Signalling</text><text x="280.6" y="75.5" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">works</text><text x="280.6" y="112" text-anchor="middle" class="tk" style="font-size:9.5px">Signalling</text></g><line x1="317.6" y1="65" x2="321.4" y2="65" stroke="var(--muted)" stroke-width="1.5" marker-end="url(#ar)"/><g><title>Static & dynamic tests (Systems)</title><rect x="323.4" y="36" width="72" height="58" rx="4" fill="var(--bar)"/><text x="359.4" y="56.0" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">Static &</text><text x="359.4" y="69.0" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">dynamic</text><text x="359.4" y="82.0" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">tests</text><text x="359.4" y="112" text-anchor="middle" class="tk" style="font-size:9.5px">Systems</text></g><line x1="396.4" y1="65" x2="400.3" y2="65" stroke="var(--muted)" stroke-width="1.5" marker-end="url(#ar)"/><g><title>EWP & integrated tests (All groups)</title><rect x="402.3" y="36" width="72" height="58" rx="4" fill="var(--bar)"/><text x="438.3" y="56.0" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">EWP &</text><text x="438.3" y="69.0" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">integrated</text><text x="438.3" y="82.0" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">tests</text><text x="438.3" y="112" text-anchor="middle" class="tk" style="font-size:9.5px">All groups</text></g><line x1="475.3" y1="65" x2="479.1" y2="65" stroke="var(--muted)" stroke-width="1.5" marker-end="url(#ar)"/><g><title>ETR (All groups)</title><rect x="481.1" y="36" width="72" height="58" rx="4" fill="var(--bar)"/><text x="517.1" y="69.0" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">ETR</text><text x="517.1" y="112" text-anchor="middle" class="tk" style="font-size:9.5px">All groups</text></g><line x1="554.1" y1="65" x2="558.0" y2="65" stroke="var(--muted)" stroke-width="1.5" marker-end="url(#ar)"/><g><title>Inauguration (Client)</title><rect x="560.0" y="36" width="72" height="58" rx="4" fill="var(--crit)"/><text x="596.0" y="69.0" text-anchor="middle" style="fill:#fff;font:600 10.5px var(--body)">Inauguration</text><text x="596.0" y="112" text-anchor="middle" class="tk" style="font-size:9.5px">Client</text></g></svg>
+          
+          <span class="note">Anonymised and simplified; no client documents published.</span>
+        </div>
+      </article>
+      <article class="case">
+        <div class="txt">
+          <span class="tag">METRO · ENGINEER'S SIDE · LINE 3 PHASE 4</span>
+          <h3>Civil, track, power and signalling on one programme</h3>
+          <div class="chips"><span class="chip">Integrated programme</span><span class="chip">Interface planning</span><span class="chip">Depot programme</span><span class="chip">Recovery planning</span></div>
+          <p>On Greater Cairo Metro Line 3 Phase 4, I planned the interfaces between the civil, track, power and signalling contracts on an elevated extension, so each group knew when it would get access and when it had to hand over to the next.</p>
+          <dl>
+            <dt>Integration</dt><dd>One integrated programme across civil works, track, power and E&amp;M, and signalling and telecom</dd>
+            <dt>Depot</dt><dd>A depot programme linking utility networks, power-on and civil-to-systems handovers</dd>
+            <dt>Recovery</dt><dd>A delay-mitigation programme built around the access dates the other contracts could meet</dd>
+            <dt>Result</dt><dd>The phase was completed and entered passenger service</dd>
+          </dl>
+        </div>
+        <div class="viz">
+          <h4>Who hands over to whom</h4>
+          <span class="sub">Simplified interface logic between the contract groups</span>
+          <table class="mini">
+            <thead><tr><th>Group</th><th>Scope</th><th>Starts when</th></tr></thead>
+            <tbody>
+              <tr><td>Civil works</td><td>Viaduct, stations, depot buildings</td><td>Site handed over</td></tr>
+              <tr><td>Track</td><td>Sub-ballast and track</td><td>Civil hands over viaduct</td></tr>
+              <tr><td>Power &amp; E&amp;M</td><td>Substations, station systems</td><td>Civil hands over rooms</td></tr>
+              <tr><td>Signalling</td><td>Signalling, control, telecom</td><td>Track laid, power on</td></tr>
+              <tr><td>All groups</td><td>Integrated testing</td><td>Every interface closed</td></tr>
+            </tbody>
+          </table>
+          <span class="note">Anonymised and simplified; no client documents published.</span>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -354,12 +432,12 @@ footer{border-top:1px solid var(--rule);padding-top:16px;font-size:14px;color:va
           <div class="g-years"><span style="left:0%">2010</span><span style="left:11.76%">2012</span><span style="left:23.53%">2014</span><span style="left:35.29%">2016</span><span style="left:47.06%">2018</span><span style="left:58.82%">2020</span><span style="left:70.59%">2022</span><span style="left:82.35%">2024</span><span style="left:94.12%">2026</span></div>
         </div>
         <div class="g-row"><div class="g-name"><small>MR-1060 · 06/2023 – now</small><b>Parkway · Senior Planning Engineer</b></div><div class="g-track"><div class="g-bar crit" style="left:78.92%;width:20.1%" title="Parkway International Contracting, Dubai"></div><div class="g-ms" style="left:78.43%" title="MBA, 2023"></div></div></div>
-        <div class="g-row"><div class="g-name"><small>MR-1050 · 08/2020 – 06/2023</small><b>SYSTRA · Lead Planning &amp; Controls</b></div><div class="g-track"><div class="g-bar" style="left:62.25%;width:16.67%" title="Greater Cairo Metro Lines 3 and 4"></div></div></div>
+        <div class="g-row"><div class="g-name"><small>MR-1050 · 08/2020 – 06/2023</small><b>SYSTRA · Lead Planning &amp; Controls</b></div><div class="g-track"><div class="g-bar" style="left:62.25%;width:16.67%" title="Greater Cairo Metro Line 3, Phases 3 and 4"></div></div></div>
         <div class="g-row"><div class="g-name"><small>MR-1040 · 01/2018 – 07/2020</small><b>GTS-SISTEM / Alstom · Senior Planner</b></div><div class="g-track"><div class="g-bar" style="left:47.06%;width:14.7%" title="Dubai Metro Route 2020 (Expo 2020)"></div></div></div>
-        <div class="g-row"><div class="g-name"><small>MR-1030 · 02/2015 – 01/2018</small><b>ECG · Planning Engineer</b></div><div class="g-track"><div class="g-bar" style="left:29.9%;width:17.16%" title="Capital and Sphinx International Airports, Al-Andalus Dubai"></div><div class="g-ms" style="left:37.75%" title="PMP, 2016"></div></div></div>
+        <div class="g-row"><div class="g-name"><small>MR-1030 · 02/2015 – 01/2018</small><b>ECG · Planning Engineer</b></div><div class="g-track"><div class="g-bar" style="left:29.9%;width:17.16%" title="Capital and Sphinx International Airports, Al-Andalus Dubai"></div><div class="g-ms" style="left:34.8%" title="PMP, 2015"></div></div></div>
         <div class="g-row"><div class="g-name"><small>MR-1020 · 02/2013 – 01/2015</small><b>UECC / Palm Hills · Planning Engineer</b></div><div class="g-track"><div class="g-bar" style="left:18.14%;width:11.27%" title="Palm Hills Katameya, 752 villas"></div></div></div>
         <div class="g-row"><div class="g-name"><small>MR-1010 · 04/2010 – 01/2013</small><b>TEAMCON · Project Engineer</b></div><div class="g-track"><div class="g-bar" style="left:1.47%;width:16.18%" title="Allegria and New Cairo villas"></div></div></div>
-        <div class="g-legend"><span><i style="background:var(--crit)"></i>Current role</span><span><i style="background:var(--bar)"></i>Completed</span><span><i style="background:var(--ink);width:10px;height:10px;transform:rotate(45deg)"></i>Milestones: PMP 2016 · MBA 2023</span></div>
+        <div class="g-legend"><span><i style="background:var(--crit)"></i>Current role</span><span><i style="background:var(--bar)"></i>Completed</span><span><i style="background:var(--ink);width:10px;height:10px;transform:rotate(45deg)"></i>Milestones: PMP 2015 · MBA 2023</span></div>
       </div>
     </div>
   </section>
@@ -384,8 +462,8 @@ footer{border-top:1px solid var(--rule);padding-top:16px;font-size:14px;color:va
   <section aria-labelledby="cred-h">
     <div class="sec-head"><h2 id="cred-h">Credentials</h2></div>
     <div class="creds">
-      <div><span class="label">Certification &amp; education</span><ul><li>PMP, Project Management Institute (2016)</li><li>MBA, Strategic Management, AASTMT (2023)</li><li>BSc Civil Engineering, Benha University (2010)</li></ul></div>
-      <div><span class="label">Earlier projects</span><ul><li>Dubai Metro Route 2020 (Expo 2020)</li><li>Greater Cairo Metro Lines 3 &amp; 4</li><li>Capital and Sphinx International Airports</li><li>Palm Hills Katameya, 752 villas</li></ul></div>
+      <div><span class="label">Certification &amp; education</span><ul><li>PMP, Project Management Institute (2015)</li><li>MBA, Strategic Management, AASTMT (2023)</li><li>BSc Civil Engineering, Benha University (2010)</li></ul></div>
+      <div><span class="label">Earlier projects</span><ul><li>Dubai Metro Route 2020 (Expo 2020)</li><li>Greater Cairo Metro Line 3, Phases 3 &amp; 4</li><li>Capital and Sphinx International Airports</li><li>Palm Hills Katameya, 752 villas</li></ul></div>
       <div><span class="label">Tools</span><ul><li>Primavera P6 · MS Project · TILOS</li><li>Power BI · Excel · Aconex</li><li>AutoCAD · Navisworks / BIM</li></ul></div>
     </div>
   </section>
@@ -418,4 +496,5 @@ document.querySelectorAll('button.copy').forEach(function(btn){
 });
 </script>
 
-</body></html>
+<script>(function(){var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));function sel(tb){tabs.forEach(function(x){var on=x===tb;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});tb.focus();}
+tabs.forEach(function(tb,i){tb.addEventListener('click',function(){sel(tb)});tb.addEventListener('keydown',function(e){if(e.key==='ArrowRight')sel(tabs[(i+1)%tabs.length]);if(e.key==='ArrowLeft')sel(tabs[(i-1+tabs.length)%tabs.length]);});});})();</script></body></html>
