@@ -6,7 +6,7 @@
 .tabs button:focus-visible{outline:2px solid var(--crit);outline-offset:2px}
 .tabpanel{padding-top:18px}.tabpanel .figures{margin-top:0}
 .ptitle{display:none}
-.rails{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.rails{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
 .ritem{background:var(--sheet);padding:16px 18px;display:grid;gap:6px}.ritem b{font:700 18px var(--display);letter-spacing:.2px}.ritem span{font-size:14px;color:var(--ink-2,var(--muted))}
 .more{display:inline-block;margin-top:14px;font:13px var(--mono);color:var(--crit);text-decoration:none}
 @media print{.tabs{display:none}.tabpanel[hidden]{display:block!important}.ptitle{display:block;font:700 20px var(--display);margin:14px 0 8px}.more{display:none}}
@@ -196,7 +196,7 @@ footer{border-top:1px solid var(--rule);padding-top:16px;font-size:14px;color:va
     <div class="cta-row"><a class="btn primary" href="#contact">Contact me</a><a class="btn" href="#work">See selected work</a><a class="btn" href="https://www.linkedin.com/in/mohamedramadanprojectcontrols" target="_blank" rel="noopener">LinkedIn</a></div>
     <div class="tabs" role="tablist" aria-label="Project types">
       <button role="tab" id="tab-b" aria-controls="panel-b" aria-selected="true"><svg viewBox="0 0 64 64" width="72" height="72" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M6 58h52"/><rect x="10" y="14" width="16" height="44"/><rect x="30" y="6" width="18" height="52"/><path d="M48 30h8v28h-8"/><path d="M15 22h6M15 30h6M15 38h6M15 46h6M35 14h8M35 22h8M35 30h8M35 38h8M35 46h8"/></svg><b>Buildings</b><small>Contractor side · Dubai</small></button>
-      <button role="tab" id="tab-r" aria-controls="panel-r" aria-selected="false" tabindex="-1"><svg viewBox="0 0 64 64" width="72" height="72" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><rect x="14" y="6" width="36" height="42" rx="8"/><path d="M14 28h36"/><rect x="20" y="12" width="24" height="11" rx="2"/><circle cx="23" cy="38" r="2.6"/><circle cx="41" cy="38" r="2.6"/><path d="M22 48l-8 10M42 48l8 10M17 54h30"/></svg><b>Metro &amp; rail</b><small>Engineer's side · Cairo</small></button>
+      <button role="tab" id="tab-r" aria-controls="panel-r" aria-selected="false" tabindex="-1"><svg viewBox="0 0 64 64" width="72" height="72" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><rect x="14" y="6" width="36" height="42" rx="8"/><path d="M14 28h36"/><rect x="20" y="12" width="24" height="11" rx="2"/><circle cx="23" cy="38" r="2.6"/><circle cx="41" cy="38" r="2.6"/><path d="M22 48l-8 10M42 48l8 10M17 54h30"/></svg><b>Metro &amp; rail</b><small>Cairo &amp; Dubai</small></button>
     </div>
     <div class="tabpanel" role="tabpanel" id="panel-b" aria-labelledby="tab-b">
       <h3 class="ptitle">Buildings</h3>
@@ -217,6 +217,7 @@ footer{border-top:1px solid var(--rule);padding-top:16px;font-size:14px;color:va
       <h3 class="ptitle">Metro &amp; rail</h3>
       <div class="rails">
         <div class="ritem"><b>Greater Cairo Metro Line 3</b><span>Phases 3 and 4, on the Engineer's side</span></div>
+        <div class="ritem"><b>Dubai Metro Route 2020</b><span>Expo 2020 extension, with GTS-SISTEM / Alstom</span></div>
         <div class="ritem"><b>Integrated programme</b><span>All main contracts in one comprehensive schedule</span></div>
         <div class="ritem"><b>Signed road map</b><span>Every contracting group agreed one path, from civil works to inauguration</span></div>
         <div class="ritem"><b>Interfaces</b><span>Civil, track, power and signalling handovers planned and tracked</span></div>
